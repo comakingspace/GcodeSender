@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo 'We will install laserweb4 now, which relies on NodeJS.'
-git clone https://github.com/LaserWeb/lw.comm-server.git
-cd lw.comm-server
+git clone https://github.com/LaserWeb/lw.comm-server.git /home/pi/lw.comm-server
+cd /home/pi/lw.comm-server
 sudo npm install serialport --unsafe-perm --build-from-source --quiet
 sudo npm install --quiet
 echo 'LaserWeb was installed. configuring autostart now.'
