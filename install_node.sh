@@ -8,6 +8,6 @@ chmod +x install-node-v.lts.sh
 ./install-node-v.lts.sh
 echo 'node was installed with the following versions:'
 echo 'node:'
-echo node -v
+node -v
 echo 'npm:'
-echo npm -v
+npm -v
