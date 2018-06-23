@@ -1,5 +1,26 @@
 #!/bin/sh
 
+enter_full_setting()
+{
+lua - "$1" "$2" <<EOF > "$2.bak"
+local key=assert(arg[1])
+local fn=assert(arg[2])
+local file=assert(io.open(fn))
+local made_change=False
+for line in file:lines() do
+  if line:match("^#?%s*"..key) then
+    line=key
+    made_change=True
+  end
+  print(line)
+end
+if not made_change then
+  print(key)
+end
+EOF
+mv "$2.bak" "$2"
+}
+
 enable_wifi_ap()
 {
 #This might be needed in a later version, in case we decide the pi should open a Wifi AP.
