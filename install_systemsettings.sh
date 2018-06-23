@@ -42,7 +42,7 @@ sudo raspi-config nonint do_expand_rootfs >> /dev/null
 echo 'boot to command line'
 sudo raspi-config nonint do_boot_behaviour B1
 echo 'Change the hostname'
-sudo raspi-config nonint do_hostname CoMakingController
+sudo raspi-config nonint do_hostname CoMakingCNC
 
 echo '--------------------------------------------'
 echo 'just in case we are running on a RPi 3 with wifi enabled, we will do some settings in order to ensure good ssh performance'
