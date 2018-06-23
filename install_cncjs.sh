@@ -1,5 +1,7 @@
+#!/bin/bash
+
 echo 'Now we will install cncjs'
-sudo npm install -g cncjs@latest --unsafe-perm
+sudo npm install  -g cncjs@latest --unsafe-perm --quiet
 sudo cp cncjs.service /etc/systemd/system/cncjs.service
 sudo systemctl daemon-reload
 sudo systemctl enable cncjs.service
