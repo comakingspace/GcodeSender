@@ -1,5 +1,5 @@
 [Unit]
-Description=LaserWeb4 server
+Description=CNCJS server
 
 [Service]
 ExecStart=/usr/bin/node /opt/nodejs/bin/cncjs -p 8080
@@ -7,8 +7,7 @@ Restart=always
 RestartSec=10                       # Restart service after 10 seconds if node service crashes
 StandardOutput=syslog               # Output to syslog
 StandardError=syslog                # Output to syslog
-SyslogIdentifier=lw.comm-server
-WorkingDirectory=/home/pi/lw.comm-server
+SyslogIdentifier=CNCJS
 User=pi
 #Group=<alternate group>
 Environment=NODE_ENV=production
