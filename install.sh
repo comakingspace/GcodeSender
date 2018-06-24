@@ -6,4 +6,5 @@ sudo ./install_nicetohavesoftware.sh
 sudo ./install_node.sh
 ./install_laserweb4.sh
 ./install_cncjs.sh
+./install_grblweb.sh
 echo 'All done, it would be a great idea to reboot now.'
