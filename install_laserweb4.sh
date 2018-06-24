@@ -3,8 +3,13 @@
 echo 'We will install laserweb4 now, which relies on NodeJS.'
 git clone https://github.com/LaserWeb/lw.comm-server.git /home/pi/lw.comm-server
 cd /home/pi/lw.comm-server
-sudo npm install serialport --unsafe-perm --build-from-source --quiet
-sudo npm install --quiet
+#This works
+#sudo npm install serialport --unsafe-perm --build-from-source --quiet
+#sudo npm install --quiet
+
+#Experimental:
+sudo npm install serialport -g --unsafe-perm --build-from-source --quiet
+sudo npm install -g --quiet
 echo 'LaserWeb was installed. configuring autostart now.'
 sudo cp /home/pi/lw.comm-server/lw.comm-server.service /etc/systemd/system/lw.comm-server.service
 sudo systemctl daemon-reload
