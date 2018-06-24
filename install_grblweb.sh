@@ -3,7 +3,8 @@
 echo 'We will install GRBLWeb now, which relies on NodeJS.'
 git clone https://github.com/andrewhodel/grblweb.git /home/pi/grblweb
 cd /home/pi/grblweb
-npm install
+#npm install #According to documentation
+npm install --unsafe-perm #might help if the script runs as root
 cd ../GcodeSender
 echo 'GRBLWeb was installed. configuring autostart now.'
 cp grblwebconfig.js /home/pi/grblweb/config.js
