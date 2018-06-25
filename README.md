@@ -10,6 +10,5 @@ GRBLWeb (port 9000)
 
 Therefore, this installation will take quite a while.
 
-
-To try:  
-adding -g as an option for the npm install stuff in order to install dependencies as a global package.
+Usage documentation can be found on  
+https://wiki.comakingspace.de/G-Code_Sender
