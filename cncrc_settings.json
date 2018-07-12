@@ -1,4 +1,13 @@
 {
+    "ports": [
+        {
+            "comName": "/dev/ttyUSB0",
+            "manufacturer": ""
+        }
+    ],
+    "baudrates": [
+        115200
+    ],
     "version": "1.9.15",
     "workspace": {
         "container": {
@@ -12,8 +21,8 @@
                 "widgets": [
                     "connection",
                     "console",
-                    "grbl",
-                    "webcam"
+                    "webcam",
+                    "grbl"
                 ]
             },
             "secondary": {
@@ -92,39 +101,8 @@
                 }
             }
         },
-        "laser": {
-            "minimized": false,
-            "panel": {
-                "laserTest": {
-                    "expanded": true
-                }
-            },
-            "test": {
-                "power": 0,
-                "duration": 0,
-                "maxS": 1000
-            }
-        },
         "macro": {
             "minimized": false
-        },
-        "marlin": {
-            "minimized": false,
-            "panel": {
-                "heaterControl": {
-                    "expanded": true
-                },
-                "statusReports": {
-                    "expanded": false
-                },
-                "modalGroups": {
-                    "expanded": false
-                }
-            },
-            "heater": {
-                "extruder": 180,
-                "heatedBed": 60
-            }
         },
         "probe": {
             "minimized": false,
@@ -134,38 +112,6 @@
             "probeFeedrate": 20,
             "touchPlateHeight": 10,
             "retractionDistance": 4
-        },
-        "smoothie": {
-            "minimized": false,
-            "panel": {
-                "statusReports": {
-                    "expanded": true
-                },
-                "modalGroups": {
-                    "expanded": true
-                }
-            }
-        },
-        "spindle": {
-            "minimized": false,
-            "speed": 1000
-        },
-        "tinyg": {
-            "minimized": false,
-            "panel": {
-                "powerManagement": {
-                    "expanded": false
-                },
-                "queueReports": {
-                    "expanded": true
-                },
-                "statusReports": {
-                    "expanded": true
-                },
-                "modalGroups": {
-                    "expanded": true
-                }
-            }
         },
         "visualizer": {
             "minimized": false,
@@ -205,20 +151,22 @@
     },
     "commands": [
         {
-          "title": "Update (root user)",
-          "commands": "sudo npm install -g cncjs@latest --unsafe-perm; pkill -a -f cnc"
+            "title": "Update (root user)",
+            "commands": "sudo npm install -g cncjs@latest --unsafe-perm; pkill -a -f cnc"
         },
         {
-          "title": "Update (non-root user)",
-          "commands": "npm install -g cncjs@latest; pkill -a -f cnc"
+            "title": "Update (non-root user)",
+            "commands": "npm install -g cncjs@latest; pkill -a -f cnc"
         },
         {
-          "title": "Reboot",
-          "commands": "sudo /sbin/reboot"
+            "title": "Reboot",
+            "commands": "sudo /sbin/reboot"
         },
         {
-          "title": "Shutdown",
-          "commands": "sudo /sbin/shutdown"
+            "title": "Shutdown",
+            "commands": "sudo /sbin/shutdown"
         }
-      ]
+    ],
+    "events": [],
+    "macros": []
 }
