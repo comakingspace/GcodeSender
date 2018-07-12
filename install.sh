@@ -7,4 +7,5 @@ sudo ./install_node.sh
 ./install_laserweb4.sh
 ./install_cncjs.sh
 ./install_grblweb.sh
+./install_webcam.sh
 echo 'All done, it would be a great idea to reboot now.'

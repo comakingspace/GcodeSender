@@ -1,0 +1,15 @@
+[Unit]
+Description=MJPEG Streamer
+
+[Service]
+ExecStart=/usr/local/bin/mjpg_streamer -i "input_uvc.so -r 1024x768 -d /dev/video0 -f 30 -q 80" -o "output_http.so -p 8888 -w /usr/local/share/mjpg-streamer/www"
+Restart=always
+RestartSec=10                       # Restart service after 10 seconds if node service crashes
+StandardOutput=syslog               # Output to syslog
+StandardError=syslog                # Output to syslog
+SyslogIdentifier=mjpegstreamer
+User=pi
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
