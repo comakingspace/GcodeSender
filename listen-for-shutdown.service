@@ -1,0 +1,8 @@
+[Unit]
+Description=Monitor the power-button and shutdown if pressed 
+[Service]
+ExecStart=/usr/bin/python -u /opt/powerbutton/listen-for-shutdown.py
+Restart=always
+RestartSec=3
+[Install]
+WantedBy=multi-user.target
