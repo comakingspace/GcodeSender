@@ -1,6 +1,6 @@
 [Unit]
 Description=CNCJS server
-
+After=network-online.target
 [Service]
 ExecStart=/usr/bin/node /opt/nodejs/bin/cncjs -p 8080
 Restart=always
