@@ -14,3 +14,20 @@ echo 'Install VIM'
 sudo apt-get -qq -y install vim >> /dev/null
 
 echo '--------------------------------------------'
+echo 'Install screen'
+sudo apt-get -qq -y install screen >> /dev/null
+sudo wget -O /etc/screenrc http://git.grml.org/f/grml-etc-core/etc/grml/screenrc_generic
+
+echo '--------------------------------------------'
+echo 'Install nmon'
+sudo apt-get -qq -y install nmon >> /dev/null
+
+echo '--------------------------------------------'
+echo 'Install iftop'
+sudo apt-get -qq -y install iftop >> /dev/null
+
+echo '--------------------------------------------'
+echo 'Install htop'
+sudo apt-get -qq -y install htop >> /dev/null
+
+echo '--------------------------------------------'
