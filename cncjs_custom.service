@@ -2,7 +2,7 @@
 Description=CNCJS server
 After=network-online.target
 [Service]
-ExecStart=/usr/bin/node /home/pi/bin/cncjs -p 8080
+ExecStart=/usr/bin/node /home/pi/cncjs/bin/cnc -p 8080
 Restart=always
 RestartSec=10                       # Restart service after 10 seconds if node service crashes
 StandardOutput=syslog               # Output to syslog
