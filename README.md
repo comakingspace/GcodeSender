@@ -8,11 +8,12 @@ CNCjs (port 8080)
 
 Since the CNCjs Version we are using is a fork, it needs to be compiled first.
 For this, The system will start an instance of screen during the installation in order to be able to keep running in case the SSH connection drops.
-Cou can check the current status of the installation with 
+
+You can check the current status of the installation with 
 ```bash
-screen -r CNCInstall for the current status
+screen -r CNCInstall
 ```
-The installation will take quite a while.
+The installation will take quite a while, so please be patient.
 
 Usage documentation can be found on  
 https://wiki.comakingspace.de/G-Code_Sender
