@@ -29,3 +29,13 @@ sudo systemctl daemon-reload
 sudo systemctl enable cncjs_custom.service
 sudo systemctl start cncjs_custom
 echo 'Autostart enabled, custom cncjs installed...'
+
+echo 'installing the cnc panel'
+cd ..
+git clone https://github.com/comakingspace/cnc-panel
+cd cnc-panel
+sudo cp cnc_panel.service /etc/systemd/system/cnc_panel.service
+sudo systemctl daemon-reload
+sudo systemctl enable cncjs_custom.service
+sudo systemctl start cncjs_custom
+echo 'cnc panel installed and activated'
