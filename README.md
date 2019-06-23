@@ -1,7 +1,14 @@
 # GcodeSender
+In order to prepare for the installation on a fresh new raspbian, please run
 ```bash
-sudo apt-get update && sudo apt-get -qq install git && git clone https://github.com/comakingspace/GcodeSender.git && cd GcodeSender && ./install.sh
+sudo apt-get update && sudo apt-get -qq install git && git clone https://github.com/comakingspace/GcodeSender.git && cd GcodeSender
 ```
+
+After this, please run the following. Please do not concatenate this with "&&"!
+```bash
+./install.sh
+```
+
 Please note this will currently install:  
 NodeJS<br/>
 CNCjs (port 8080)
